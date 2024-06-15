@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mbaya's Blog</title>
+    <style>
+        body {
+            background-color: rgb(5, 5, 24);
+            color: white;
+        }
+
+        .wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 15px;
+        }
+
+        .heading {
+            text-decoration: underline;
+            width: 100%;
+            text-align: center;
+        }
+
+        .heading>h1 {
+            width: fit-content;
+            margin: auto;
+            padding-bottom: 10px;
+            font-size: 3em;
+            color: lawngreen;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h4 {
+            color: green;
+        }
+
+        .posts {
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .post {
+            background-color: rgb(42, 42, 59);
+            padding: 10px;
+            border-radius: 15px;
+            width: 80%;
+        }
+
+        .post>h2 {
+            color: orangered;
+            font-size: 1.7em;
+        }
+
+        .post:hover {
+            background-color: rgb(31, 31, 36);
+        }
+
+        @media (min-width: 600px) {
+            .posts {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            .posts p {
+                margin: 10px 0;
+                font-size: 1.3em;
+            }
+        }
+
+        @media (min-width: 900px) {
+            .posts p {
+                font-size: 1.4em;
+            }
+        }
+
+         
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="heading">
+            <h1>WELCOME TO MBAYA'S BLOG SITE</h1>
+        </div> 
+            <div class="posts"> 
+                <div class="post">
+                    <h2>{{clicked_posts.title}}</h2>
+                    <h4>{{clicked_posts.date_created}}</h4>
+                    <p>{{clicked_posts.body}}</p>
+                </div> 
+            </div> 
+    </div>
+</body>
+
+</html>
