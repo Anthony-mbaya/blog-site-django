@@ -9,4 +9,4 @@ def post(request, pk):
     clicked_posts = Post.objects.get(id=pk) #get id of the clicked post and assign to pk
     return render(request, 'post.html', { 'clicked_posts' : clicked_posts })
 
-# Create your views here.
+# Create your views here. 
