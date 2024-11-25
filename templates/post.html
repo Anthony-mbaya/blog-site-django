@@ -5,88 +5,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mbaya's Blog</title>
-    <style>
-        body {
-            background-color: rgb(5, 5, 24);
-            color: white;
-        }
-
-        .wrapper {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 15px;
-        }
-
-        .heading {
-            text-decoration: underline;
-            width: 100%;
-            text-align: center;
-        }
-
-        .heading>h1 {
-            width: fit-content;
-            margin: auto;
-            padding-bottom: 10px;
-            font-size: 3em;
-            color: lawngreen;
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        h4 {
-            color: green;
-        }
-
-        .posts {
-            display: flex;
-            flex-direction: column;
-            gap: 17px;
-            align-items: center;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .post {
-            background-color: rgb(42, 42, 59);
-            padding: 10px;
-            border-radius: 15px;
-            width: 80%;
-        }
-
-        .post>h2 {
-            color: orangered;
-            font-size: 1.7em;
-        }
-
-        .post:hover {
-            background-color: rgb(31, 31, 36);
-        }
-
-        @media (min-width: 600px) {
-            .posts {
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-around;
-            }
-
-            .posts p {
-                margin: 10px 0;
-                font-size: 1.3em;
-            }
-        }
-
-        @media (min-width: 900px) {
-            .posts p {
-                font-size: 1.4em;
-            }
-        }
-
-         
-    </style>
+     
 </head>
+<style>
+    /* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
 
+/* Wrapper */
+.wrapper {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.heading {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #282c34;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.heading h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Posts Container */
+.posts {
+    margin-top: 20px;
+}
+
+/* Single Post */
+.post {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.wrapper button{
+    padding: 4px;
+    margin-bottom: 2px;
+}
+
+.wrapper button a{
+    padding: 10px;
+}
+
+</style>
 <body>
     <div class="wrapper">
+        <button>
+            <a href="/">home</a>
+        </button>
         <div class="heading">
             <h1>{{clicked_posts.title}}</h1>
         </div> 

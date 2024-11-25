@@ -1,3 +1,16 @@
 # Mbaya's blog site
 
-this backend site fetches data from django admin and displays
+## Description
+This project is a web application that allows users to view and read blogs only
+
+## Table of Contents
+# Installation
+git clone
+cd app
+python3 -m venv venv
+source venv/bin/activate || venv\Scripts\activate
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+# Contribution
